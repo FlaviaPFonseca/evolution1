@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ActivedirectoryRoutingModule } from './activedirectory-routing.module';
 import { ActivedirectoryComponent } from './activedirectory.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ActivedirectoryComponent } from './activedirectory.component';
   ],
   imports: [
     CommonModule,
-    ActivedirectoryRoutingModule
+    ActivedirectoryRoutingModule,
+    SharedModule
   ]
 })
 export class ActivedirectoryModule { }
